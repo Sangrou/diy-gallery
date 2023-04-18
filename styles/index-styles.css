@@ -1,0 +1,630 @@
+/*Global Variables*/
+:root {
+  --roboto-flex-font: "Roboto Flex", cursive;
+  --inter-font: "Inter", sans-serif;
+  --almost-black-color: #151515;
+  --dark-gray-color: #444444;
+  --white-color: #ffffff;
+  --gold-color: #d5966c;
+}
+
+/*CSS Resets*/
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/*Main Content*/
+#content-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*DIY Gallery Section*/
+/*Set rectangle to display none initally*/
+#rectangle-placeholder {
+  display: none;
+}
+
+#hero-pair-image {
+  width: 100%;
+}
+
+/*Heading Title*/
+h1 {
+  font-family: var(--roboto-flex-font);
+  color: var(--almost-black-color);
+  text-transform: uppercase;
+  font-size: 60px;
+  line-height: 55px;
+  width: 343px;
+}
+
+/*Hero subtext*/
+.hero-subtext-par {
+  font-family: var(--inter-font);
+  color: var(--dark-gray-color);
+  font-size: 18px;
+  line-height: 28px;
+  width: 343px;
+}
+
+/*Our Location Bar*/
+#location-bar {
+  width: 204px;
+  height: 72px;
+  background-color: var(--almost-black-color);
+}
+
+#location-bar,
+#location-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#our-location-text{
+  color: var(--white-color);
+  font-family: var(--roboto-flex-font);
+  font-weight: 900;
+  font-size: 20px;
+  letter-spacing: 3.64px;
+  text-transform: uppercase;
+  position: relative;
+  left: 30px;
+}
+
+#location-arrow {
+  width: 56px;
+  height: 72px;
+  background-color: var(--gold-color);
+  position: relative;
+  left: 56px;
+}
+
+
+/*Day At Gallery Section*/
+#canvas-walls-image {
+  width: 343px;
+  height: 320px;
+  position: relative;
+  top: 70px;
+  object-fit: contain;
+}
+
+#your-day-at-gallery-title {
+  font-family: var(--roboto-flex-font);
+  color: var(--almost-black-color);
+  font-size: 50px;
+  line-height: 45px;
+  text-transform: uppercase;
+  position: relative;
+  top: 40px;
+  width: 343px;
+}
+
+.day-at-gallery-subtext-par {
+  font-family: var(--inter-font);
+  color: var(--dark-gray-color);
+  font-size: 18px;
+  line-height: 28px;
+  width: 343px;
+}
+
+/*Images and be Inspired Section*/
+#posters-image {
+  height: 480px;
+}
+
+#photos-glass-image {
+  height: 480px;
+}
+
+#posters-image,
+#photos-glass-image {
+  margin-bottom: 20px;
+}
+
+/*Come And Be Inspired Section*/
+#be-inspired-section {
+  height: 293px;
+  width: 100vw;
+  background-color: var(--almost-black-color);
+}
+
+.be-inspired-text {
+  font-family: var(--roboto-flex-font);
+  color: var(--white-color);
+  font-size: 50px;
+  line-height: 45px;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+
+.be-inspired-subtext {
+  font-family: var(--inter-font);
+  color: var(--white-color);
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: -20px;
+}
+
+.be-inspired-text,
+.be-inspired-subtext {
+  width: 295px;
+  margin-left: 40px;
+}
+
+/*Homepage Footer*/
+#homepage-footer {
+  width: 100%;
+  height: 336px;
+  margin-top: -260px; /*decreases space between footer and main content*/
+  background-color: var(--almost-black-color);
+}
+
+/*Keep Footer At Bottom of Page*/
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 336px; /*Footer height*/
+}
+
+
+/*Footer Text*/
+#homepage-footer-mad-text {
+  font-family: var(--roboto-flex-font);
+  color: var(--white-color);
+  font-size: 25px;
+  line-height: 25px;
+  text-transform: uppercase;
+  width: 110.05px;
+  padding-top: 30px;
+}
+
+#homepage-footer-mad-subtext {
+  font-family: var(--inter-font);
+  color: var(--white-color);
+  font-size: 16px;
+  line-height: 26px;
+  width: 311px;
+  padding-top: 10px;
+}
+
+#homepage-footer-mad-text,
+#homepage-footer-mad-subtext,
+#homepage-footer-icons {
+  padding-left: 30px;
+}
+
+#homepage-footer-icons {
+  display: flex;
+  gap: 25px;
+  padding-top: 30px;
+  cursor: pointer;
+}
+
+/*Footer Hover*/
+path:hover{
+  fill: var(--gold-color);
+}
+
+
+/*MEDIA QUERIES*/
+/*max-number and below 
+  min-number and above*/
+
+/*Mobile Devices*/
+/*689 and below*/
+@media (max-width: 689px) {
+  /*Centers content for mobile*/
+  .day-at-gallery-section,
+  #canvas-images-and-inspired-group,
+  #canvas-and-inspired-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-subtext-par {
+    margin-top: -20px;
+  }
+
+  .day-at-gallery-subtext-par {
+    margin-top: 60px;
+  }
+}
+
+/*350 and below*/
+@media (max-width: 350px) {
+  /*Hero title and subtext*/
+  #mod-art-gallery-title,
+  #your-day-at-gallery-title {
+    font-size: 40px;
+  }
+
+  #modern-art-gallery-section {
+    width: 260px;
+  }
+
+  .hero-subtext-par {
+    width: 300px;
+  }
+
+  /*Images*/
+  #canvas-walls-image,
+  #posters-image,
+  #photos-glass-image {
+    width: 300px;
+  }
+
+  /*Gallery title and subtext*/
+  #your-day-at-gallery-title,
+  .day-at-gallery-subtext-par {
+    width: 260px;
+  }
+
+  /*Inspired section title and subtext*/
+  .be-inspired-text,
+  .be-inspired-subtext {
+    width: 280px;
+    margin-left: 40px;
+  }
+
+  /*Footer subtext*/
+  #homepage-footer-mad-subtext {
+    width: 260px;
+  }
+}
+
+/*318 and below*/
+@media (max-width: 318px) {
+  /*Gallery title and subtext*/
+  #your-day-at-gallery-title,
+  .day-at-gallery-subtext-par {
+    width: 230px;
+  }
+
+  /*Hero Subtext*/
+  .hero-subtext-par {
+    width: 220px;
+  }
+
+  /*Images*/
+  #canvas-walls-image,
+  #posters-image,
+  #photos-glass-image {
+    width: 260px;
+  }
+}
+
+/*300 and below*/
+@media (max-width: 300px) {
+  .be-inspired-subtext,
+  #homepage-footer-mad-subtext {
+    width: 235px;
+  }
+}
+
+/*Tablet Devices*/
+/*Between 530px and 689px
+Fix inspired and footer text sections*/
+@media (min-width: 530px) and (max-width: 689px) {
+  #be-inspired-section {
+    display: flex;
+    align-items: center;
+  }
+
+  .be-inspired-subtext {
+    margin-left: -2px;
+    padding-right: 10px;
+  }
+}
+
+/*Tablet 690px and above*/
+@media (min-width: 690px) {
+  #content-wrap {
+    display: block;
+  }
+
+  #hero-pair-image {
+    width: 437px;
+    height: 700px;
+    object-fit: contain;
+  }
+
+  .hero-subtext-par {
+    width: 339px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  /*Tablet-Modern Art Gallery Section*/
+  #modern-art-gallery-section {
+    position: absolute;
+    top: 0;
+    left: 35px;
+    margin-left: 300px;
+    margin-top: 60px;
+    height: 410px;
+  }
+
+  #mod-art-gallery-title {
+    font-size: 70px;
+    line-height: 65px;
+    width: 339px;
+  }
+
+  /*Tablet-Day At Gallery Section*/
+  .day-at-gallery-section {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 64px;
+  }
+
+  #canvas-walls-image {
+    width: 398px;
+    height: 400px;
+  }
+
+  #your-day-at-gallery-title {
+    font-size: 50px;
+    line-height: 45px;
+  }
+
+  #your-day-at-gallery-title,
+  .day-at-gallery-subtext-par {
+    width: 223px;
+  }
+
+  .day-at-gallery-subtext-par {
+    padding-top: 20px;
+  }
+
+  #day-at-gallery-text-group {
+    margin-top: 50px;
+  }
+
+  /*Tablet-Images Section*/
+  #posters-image {
+    width: 398px;
+    height: 720px;
+  }
+
+  #photos-glass-image {
+    width: 280px;
+    height: 313px;
+  }
+
+  /*Tablet-Be Inspired Section*/
+  #be-inspired-section {
+    width: 280px;
+    height: 365px;
+    padding-top: 30px;
+  }
+
+  .be-inspired-text {
+    font-size: 50px;
+    line-height: 45px;
+  }
+
+  .be-inspired-text,
+  .be-inspired-subtext {
+    width: 223px;
+  }
+
+  #posters-image {
+    margin-top: 40px;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  #photos-glass-image,
+  #be-inspired-section {
+    display: block;
+  }
+
+  #photos-glass-image {
+    margin-bottom: 10px;
+  }
+
+  #canvas-images-and-inspired-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: -8px;
+  }
+
+  #canvas-and-inspired-section {
+    margin-top: 35px;
+  }
+
+  #all-sections-groups {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/*Footer Tablet*/
+@media (min-width: 580px) {
+  /*Tablet-Footer*/
+  #homepage-footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+  }
+
+  #homepage-footer-mad-subtext {
+    font-size: 16px;
+    line-height: 26px;
+    width: 281px;
+  }
+}
+
+/*Desktop Devices*/
+/*1000 and above*/
+@media (min-width: 1000px) {
+  #rectangle-placeholder {
+    width: 465px;
+    height: 799px;
+    background-color: black;
+  }
+
+  #hero-pair-image {
+    width: 540px;
+    height: 800px;
+  }
+
+  #hero-pair-image,
+  #rectangle-placeholder {
+    display: inline-block;
+    margin: -12px;
+  }
+
+  #mod-art-gallery-title {
+    color: white;
+    width: 514px;
+    font-size: 96px;
+    line-height: 88px;
+    position: relative;
+    right: 160px;
+     /*Creates half colored text*/
+     background: linear-gradient(to right, white 50%, black 50%);
+     -webkit-background-clip: text;
+     background-clip: text; /*Fallback for chrome*/
+     -webkit-text-fill-color: transparent;
+  }
+
+  .hero-subtext-par {
+    margin-bottom: 60px;
+  }
+
+  #mod-subtext-and-location {
+    position: relative;
+    left: 20px;
+  }
+
+  #modern-art-gallery-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1208px) {
+  #mod-subtext-and-location {
+    position: relative;
+    left: -150px;
+  }
+
+  .hero-subtext-par {
+    width: 300px;
+  }
+}
+
+@media(min-width: 1090px){
+
+  #mod-subtext-and-location {
+    position: relative;
+    left: -102px;
+  }
+}
+
+@media (min-width: 1200px) {
+  /*Subtext and titles*/
+  #your-day-at-gallery-title,
+  .hero-subtext-par,
+  .day-at-gallery-subtext-par,
+  .be-inspired-text,
+  .be-inspired-subtext {
+    width: 350px;
+  }
+
+  .hero-subtext-par {
+    width: 340px;
+  }
+
+  .day-at-gallery-subtext-par,
+  .hero-subtext-par,
+  .be-inspired-subtext {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  #canvas-walls-image {
+    width: 635px;
+    height: 800px;
+  }
+
+  #day-at-gallery-text-group,
+  #canvas-walls-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #posters-image {
+    width: 635px;
+    height: 720px;
+  }
+
+  #photos-glass-image {
+    width: 445px;
+    height: 313px;
+  }
+
+  #be-inspired-section {
+    width: 445px;
+    height: 367px;
+  }
+
+  #homepage-footer-mad-subtext {
+    width: 430px;
+  }
+  .day-at-gallery-section {
+    gap: 102px;
+  }
+}
+
+@media (min-width: 1500px) {
+  #rectangle-placeholder {
+    width: 700px;
+    height: 708px;
+    background-color: black;
+  }
+
+  #hero-pair-image {
+    width: 540px;
+    height: 799px;
+    margin-left: -40px;
+  }
+
+  #mod-subtext-and-location {
+    position: relative;
+    left: 230px;
+  }
+
+  #mod-art-gallery-title {
+    position: relative;
+    right: -50px;
+    font-size: 100px;
+    line-height: 110px;
+    width: 530px;
+}
+
+}

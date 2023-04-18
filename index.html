@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" initial-scale="1.0" />
+    <link rel="stylesheet" type="text/css" href="styles/index-styles.css" />
+    <script src="scripts/our-location-arrow.js" defer></script>
+    <title>DIY Галерея</title>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@800;900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+
+<link rel="shortcut icon" href="assets/favicon.ico"/>
+  </head>
+
+  <body>
+    <div id="page-container">
+      <main>
+        <div id="rectangle-placeholder"></div>
+        <picture>
+          <source srcset="
+          assets/tablet/image-hero.jpg 1x,
+          assets/tablet/image-hero@2x.jpg 2x" media="(min-width: 690px)" />
+
+          <source srcset="
+          assets/desktop/image-hero.jpg 1x,
+          assets/desktop/image-hero@2x 2x" media="(min-width: 1000px)" />
+
+          <img srcset="
+          assets/mobile/image-hero.jpg 1x"
+            alt="Мужчина и женщина стоят в галерее и смотрят на картину"
+            id="hero-pair-image" />
+        </picture>
+
+        <div id="content-wrap">
+          <!--DIY Gallery Section-->
+          <section id="modern-art-gallery-section">
+            <h1 id="mod-art-gallery-title">DIY<br />Галерея</h1>
+            <div id="mod-subtext-and-location">
+              <p class="hero-subtext-par">
+                В галерее выставляются местные художники и студенты художественных училищ.
+                Здесь работают и проходят практику студенты факультетов культурологии, истории искусств и музейного дела.
+              </p>
+
+              <!--Our Location Section-->
+              <section class="location-section">
+
+                <div id="location-bar">
+                  <h2 id="our-location-text">Мы Здесь</h2>
+                  <a href="html/location-page.html">
+                    <span id="location-arrow"><svg width="10" height="24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke="#FFF" fill="none" d="m1 0 8 12-8 12" />
+                      </svg></span></a>
+                </div>
+              </section>
+            </div>
+          </section>
+
+          <!--Your Day At The Gallery Section-->
+          <div id="all-sections-groups">
+            <section class="day-at-gallery-section">
+              <picture>
+                <source srcset="
+                assets/tablet/image-grid-1.jpg 1x,
+               assets/tablet/image-grid-1@2x.jpg 2x" media="(min-width: 690px)" />
+
+                <source srcset="
+                assets/desktop/image-grid-1.jpg 1x,
+               assets/desktop/image-grid-1@2x 2x" media="(min-width: 1000px)" />
+
+                <img srcset="
+                assets/mobile/image-grid-1.jpg 1x,
+                "
+                  alt="Галерея с экспонатами на стенах, светлые стены и пол"
+                  id="canvas-walls-image" />
+              </picture>
+              <div id="day-at-gallery-text-group">
+                <h2 id="your-day-at-gallery-title">Ваш день<br />В Галерее</h2>
+                <p class="day-at-gallery-subtext-par">
+                  Приглашаем всех желающих изучить нашу коллекцию и в деталях ознакомиться с работой галереи.
+                </p>
+              </div>
+            </section>
+          </div>
+
+          
+          <div id="canvas-images-and-inspired-group">
+            <picture>
+              <source srcset="
+              assets/tablet/image-grid-2.jpg 1x,
+              assets/tablet/image-grid-2@2x.jpg 2x" media="(min-width: 690px)" />
+
+              <source srcset="
+              assets/desktop/image-grid-2.jpg 1x,
+              assets/desktop/image-grid-2@2x 2x" media="(min-width: 1000px)" />
+
+              <img srcset="
+              assets/mobile/image-grid-2.jpg 1x,
+              "
+                alt="Яркие постеры и таблички с описанием на стене"
+                id="posters-image" />
+            </picture>
+
+            <!--People Looking At Canvas Image-->
+            <div id="canvas-and-inspired-section">
+              <picture>
+                <source srcset="
+                assets/tablet/image-grid-3.jpg 1x,
+                assets/tablet/image-grid-3@2x.jpg 2x" media="(min-width: 690px)" />
+
+                <source srcset="
+                assets/desktop/image-grid-3.jpg 1x,
+                assets/desktop/image-grid-3@2x 2x" media="(min-width: 1000px)" />
+
+                <img srcset="
+                assets/mobile/image-grid-3.jpg 1x,
+                "
+                  alt="Фотографии в стеклянных рамках на стене"
+                  id="photos-glass-image" />
+              </picture>
+
+              <!--Come and Be Inspired Section-->
+              <div id="be-inspired-section">
+                <h2 class="be-inspired-text">Новый опыт</h2>
+                <p class="be-inspired-subtext">
+                Будем рады видеть вас в гостях. Погрузим в искусство и жизнь галереи.</p>
+              </div>
+            </div>
+
+          
+          </div>
+
+          <div id="all-sections-groups">
+            <section class="day-at-gallery-section">
+
+              <div id="day-at-gallery-text-group">
+                <h2 id="your-day-at-gallery-title">Практика<br />для всех</h2>
+                <p class="day-at-gallery-subtext-par">
+                  В нашей галерее очень легко получить практический опыт. У нас вы можете выставляться, попробовать себя в роли куратора, дизайнера, осветителя или гида.
+                </p>
+              </div>
+              <picture>
+                <source srcset="
+                assets/tablet/image-invite.jpg 1x
+                " media="(min-width: 690px)" />
+
+                <source srcset="
+                assets/desktop/image-invite.jpg 1x
+                " media="(min-width: 1000px)" />
+
+                <img srcset="
+                assets/mobile/image-invite.jpg 1x
+                "
+                  alt="Человек вешает картину на стену. Видны руки, картина, стена."
+                  id="canvas-walls-image" />
+              </picture>
+              
+            </section>
+          </div>
+
+        </div>
+      </main>
+
+
+      <!--Footer-->
+      <footer id="homepage-footer">
+        <h2 id="homepage-footer-mad-text">DIY ГАЛЕРЕЯ</h2>
+        <p id="homepage-footer-mad-subtext">
+          DIY галерея открыта для всех и работает каждый день с 1300 до 2000. Мы расположены по адресу: Россия, Кировская область, Киров, ул Старозаводская, дом 22.
+        </p>
+
+        <section id="homepage-footer-icons">
+          <!--Telegram Icon-->
+          <svg fill="#FFF" height="20px" width="20px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	        viewBox="0 0 189.473 189.473" xml:space="preserve">
+          <g>
+	        <path d="M152.531,179.476c-1.48,0-2.95-0.438-4.211-1.293l-47.641-32.316l-25.552,18.386c-2.004,1.441-4.587,1.804-6.914,0.972
+	        	c-2.324-0.834-4.089-2.759-4.719-5.146l-12.83-48.622L4.821,93.928c-2.886-1.104-4.8-3.865-4.821-6.955
+	        	c-0.021-3.09,1.855-5.877,4.727-7.02l174.312-69.36c0.791-0.336,1.628-0.53,2.472-0.582c0.302-0.018,0.605-0.018,0.906-0.001
+	        	c1.748,0.104,3.465,0.816,4.805,2.13c0.139,0.136,0.271,0.275,0.396,0.42c1.11,1.268,1.72,2.814,1.835,4.389
+	        	c0.028,0.396,0.026,0.797-0.009,1.198c-0.024,0.286-0.065,0.571-0.123,0.854L159.898,173.38c-0.473,2.48-2.161,4.556-4.493,5.523
+	        	C154.48,179.287,153.503,179.476,152.531,179.476z M104.862,130.579l42.437,28.785L170.193,39.24l-82.687,79.566l17.156,11.638
+	        	C104.731,130.487,104.797,130.533,104.862,130.579z M69.535,124.178l5.682,21.53l12.242-8.809l-16.03-10.874
+	        	C70.684,125.521,70.046,124.893,69.535,124.178z M28.136,86.782l31.478,12.035c2.255,0.862,3.957,2.758,4.573,5.092l3.992,15.129
+	        	c0.183-1.745,0.974-3.387,2.259-4.624L149.227,38.6L28.136,86.782z"/>
+          </g>
+          </svg>
+
+          <!--VK Icon-->
+          <svg fill="#FFF" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+          width="20px" height="20px" viewBox="0 0 94 94" xml:space="preserve">
+       <g>
+         <path d="M89,0H5C2.238,0,0,2.239,0,5v84c0,2.761,2.238,5,5,5h84c2.762,0,5-2.239,5-5V5C94,2.239,91.762,0,89,0z M74.869,52.943
+           c2.562,2.5,5.271,4.854,7.572,7.617c1.018,1.22,1.978,2.48,2.709,3.899c1.041,2.024,0.101,4.247-1.713,4.366l-11.256-0.003
+           c-2.906,0.239-5.22-0.931-7.172-2.918c-1.555-1.585-3.001-3.277-4.5-4.914c-0.611-0.673-1.259-1.306-2.025-1.806
+           c-1.534-0.996-2.867-0.692-3.748,0.909c-0.896,1.63-1.103,3.438-1.185,5.255c-0.125,2.655-0.925,3.348-3.588,3.471
+           c-5.69,0.268-11.091-0.596-16.108-3.463c-4.429-2.53-7.854-6.104-10.838-10.146c-5.816-7.883-10.27-16.536-14.27-25.437
+           c-0.901-2.005-0.242-3.078,1.967-3.119c3.676-0.073,7.351-0.063,11.022-0.004c1.496,0.023,2.485,0.879,3.058,2.289
+           c1.985,4.885,4.421,9.533,7.471,13.843c0.813,1.147,1.643,2.292,2.823,3.103c1.304,0.896,2.298,0.601,2.913-0.854
+           c0.393-0.928,0.563-1.914,0.647-2.906c0.292-3.396,0.327-6.792-0.177-10.175c-0.315-2.116-1.507-3.483-3.617-3.883
+           c-1.074-0.204-0.917-0.602-0.395-1.215c0.906-1.062,1.76-1.718,3.456-1.718l12.721-0.002c2.006,0.392,2.452,1.292,2.725,3.311
+           l0.012,14.133c-0.021,0.782,0.391,3.098,1.795,3.61c1.123,0.371,1.868-0.53,2.54-1.244c3.048-3.235,5.22-7.056,7.167-11.009
+           c0.857-1.743,1.6-3.549,2.32-5.356c0.533-1.337,1.367-1.995,2.875-1.971l12.246,0.013c0.36,0,0.729,0.004,1.086,0.063
+           c2.062,0.355,2.627,1.243,1.99,3.257c-1.004,3.163-2.959,5.799-4.871,8.441c-2.043,2.825-4.224,5.557-6.252,8.396
+           C72.411,49.38,72.561,50.688,74.869,52.943z"/>
+       </g>
+       </svg>
+
+          <!--Twitter Icon-->
+          <svg width="20" height="17" xmlns="http://www.w3.org/2000/svg" class="footer-icons-svg">
+            <path
+              d="M20 2.172a8.192 8.192 0 0 1-2.357.646 4.11 4.11 0 0 0 1.805-2.27 8.22 8.22 0 0 1-2.606.996A4.096 4.096 0 0 0 13.847.248c-2.65 0-4.596 2.472-3.998 5.037A11.648 11.648 0 0 1 1.392 1a4.109 4.109 0 0 0 1.27 5.478 4.086 4.086 0 0 1-1.858-.513c-.045 1.9 1.318 3.679 3.291 4.075a4.113 4.113 0 0 1-1.853.07 4.106 4.106 0 0 0 3.833 2.849A8.25 8.25 0 0 1 0 14.658a11.616 11.616 0 0 0 6.29 1.843c7.618 0 11.923-6.434 11.663-12.205A8.354 8.354 0 0 0 20 2.172Z"
+              fill="#FFF" />
+          </svg>
+        </section>
+      </footer>
+    </div>
+  </body>
+
+</html>

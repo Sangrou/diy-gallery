@@ -1,0 +1,340 @@
+/*Global Variables*/
+:root {
+    --roboto-flex-font: "Roboto Flex", cursive;
+    --inter-font: "Inter", sans-serif;
+    --almost-black-color: #151515;
+    --dark-gray-color: #444444;
+    --white-color: #ffffff;
+    --gold-color: #d5966c;
+  }
+  
+  /*CSS Resets*/
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+/*LOCATION PAGE*/
+/*Main Content*/
+#content-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+/*Back Home Bar*/
+.back-home-section{
+  position:absolute;
+  top: 0;
+  left: 40px;
+  cursor: pointer;
+}
+
+#back-home-text{
+  color: var(--white-color);
+  font-family: var(--roboto-flex-font);
+  font-weight: 900;
+  font-size: 19px;
+  letter-spacing: 3.64px;
+  text-transform: uppercase;
+  position: relative;
+  left: 50px;
+}
+
+#back-home-bar {
+  width: 208px;
+  height: 72px;
+  background-color: var(--almost-black-color);
+}
+
+#back-home-bar,
+#back-home-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#back-home-text{
+  color: var(--white-color);
+  font-family: var(--roboto-flex-font);
+  font-weight: 900;
+  font-size: 19px;
+  letter-spacing: 3.64px;
+  text-transform: uppercase;
+  position: relative;
+  left: -20px;
+}
+
+#back-home-arrow {
+  width: 56px;
+  height: 72px;
+  background-color: var(--gold-color);
+  position: relative;
+  left: -52px;
+}
+
+
+/*LEAFLET MAP*/
+#leaflet-map { 
+  width:100%;
+  height: 550px; 
+  z-index: -1; /*negative numbers lower the priority for visibility*/
+  filter: saturate(60%);
+}
+
+/*Location Info Section*/
+#our-location-info-section{
+  width: 100%;
+  height: 493px;
+  background-color: var(--almost-black-color);
+}
+
+#our-location-section-text{
+  color: var(--white-color);
+  font-family: var(--roboto-flex-font);
+  font-size: 50px;
+  line-height: 45px;
+  width: 343px;
+  text-transform: uppercase;
+}
+
+
+/*FOOTER*/
+/*Same Footer As Location Page*/
+#homepage-footer {
+  width: 100%;
+  height: 336px;
+  margin-top: -40px; /*decreases space between footer and main content*/
+  background-color: var(--gold-color);
+}
+
+/*Keep Footer At Bottom of Page*/
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+
+/*Footer Text*/
+#homepage-footer-mad-text {
+  font-family: var(--roboto-flex-font);
+  color: var(--almost-black-color);
+  font-size: 25px;
+  line-height: 25px;
+  text-transform: uppercase;
+  width: 110.05px;
+  padding-top: 30px;
+}
+
+#homepage-footer-mad-subtext {
+  font-family: var(--inter-font);
+  color: var(--almost-black-color);
+  font-size: 16px;
+  line-height: 26px;
+  width: 311px;
+  padding-top: 10px;
+}
+
+#homepage-footer-mad-text,
+#homepage-footer-mad-subtext,
+#homepage-footer-icons {
+  padding-left: 30px;
+}
+
+#homepage-footer-icons {
+  display: flex;
+  gap: 25px;
+  padding-top: 30px;
+  cursor: pointer;
+}
+
+#homepage-footer-icons path{
+  fill: var(--almost-black-color);
+}
+
+/*Footer Hover*/
+#homepage-footer-icons path:hover{
+  fill: var(--white-color);
+}
+
+/*Location Info Section*/
+address{
+  font-style: normal;
+  width: 343px;
+}
+
+#our-location-info-section{
+ padding-left: 60px;
+}
+
+#addess-street-name{
+  font-size: 32px;
+  line-height: 32px;
+  font-family: var(--roboto-flex-font);
+  color: var(--gold-color);
+  text-transform: uppercase;
+}
+
+#address-city-state-country,
+#address-paragraph{
+  font-size: 18px;
+  line-height: 28px;
+  font-family: var(--inter-font);
+  color: var(--white-color);
+}
+
+
+
+
+
+
+
+/*MEDIA QUERIES-Location*/
+/*max-number and below 
+  min-number and above*/
+/*Mobile Devices*/
+/*At 280px and below*/
+@media (max-width: 280px) {
+
+  #our-location-section-text{
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  /*Address paragraph*/
+  #address-paragraph{
+    width: 230px;
+  }
+
+  #addess-street-name,
+  #address-city-state-country, 
+  #address-paragraph{
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+
+/*At 360px*/
+@media (width: 360px) {
+
+  /*Footer subtext*/
+  #address-paragraph{
+    width: 320px;
+  }
+}
+
+/*350 and below*/
+@media (max-width: 350px) {
+
+  /*Footer subtext*/
+  #homepage-footer-mad-subtext {
+    width: 260px;
+  }
+}
+
+/*300 and below*/
+@media (max-width: 300px) {
+  #homepage-footer-mad-subtext {
+    width: 235px;
+  }
+}
+
+/*Tablet Devices - Footer*/
+@media (min-width: 580px) {
+  #homepage-footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    height: 200px;
+  }
+
+  #homepage-footer-mad-subtext {
+    font-size: 16px;
+    line-height: 26px;
+    width: 281px;
+  }
+
+}
+
+/*Desktop Devices*/
+/*Location and Paragraph Section*/
+/*800 and above*/
+@media (min-width: 800px) {
+
+  #our-location-section-text {
+    width: 330px;
+    font-size: 70px;
+    line-height: 70px;
+  }
+  
+  #our-location-info-section {
+      display: flex;
+      justify-content: center;
+      padding-top: 80px;
+      height: 600px;
+  }
+}
+
+/*900 and above -Add space between
+ location/paragraph sections*/
+@media (min-width: 900px) {
+
+  #our-location-info-section {
+      gap: 100px;
+  }
+}
+
+/*1100 and above -Add space between
+ location/paragraph sections*/
+ @media (min-width: 1100px) {
+
+  #our-location-info-section {
+      gap: 150px;
+  }
+}
+
+/*1300 and above -Add space between
+ location/paragraph sections*/
+ @media (min-width: 1300px) {
+
+  #our-location-info-section {
+      gap: 400px;
+  }
+}
+
+/*1500 and above -Add space between
+ location/paragraph sections*/
+ @media (min-width: 1500px) {
+
+  #our-location-section-text {
+    width: 330px;
+    font-size: 96px;
+    line-height: 88px;
+  }
+
+  #our-location-info-section {
+      gap: 500px;
+  }
+
+  #addess-street-name,
+  #address-city-state-country, 
+  #address-paragraph{
+    font-size: 22px;
+    line-height: 32px;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+
+/*Footer*/
+@media (min-width: 1200px) {
+  
+  #homepage-footer-mad-subtext {
+    width: 430px;
+  }
+}
